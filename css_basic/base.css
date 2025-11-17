@@ -1,0 +1,57 @@
+ /* Box sizing */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    color: #161616;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    padding: 0 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Responsive handling for smartphones */
+body.works_on_smartphone main {
+    display: block !important;
+}
+
+body.works_on_smartphone article,
+body.works_on_smartphone aside {
+    display: block !important;
+    width: auto !important;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 40px;
+}
