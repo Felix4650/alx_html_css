@@ -1,0 +1,76 @@
+/* =============================
+   BASE STYLES (from 5-styles.css)
+============================= */
+* { box-sizing:border-box; margin:0; padding:0; }
+body, html { font-family:'Source Sans Pro', sans-serif; color:#1f2937; background:#fff; }
+.container { max-width:1000px; margin:0 auto; padding:0 20px; }
+
+/* NAVBAR + HERO + BUTTONS */
+/* Same as previous styles... */
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 0;}
+.nav-links{list-style:none;display:flex;gap:20px;}
+.nav-links li a{text-decoration:none;color:#1f2937;font-weight:600;transition:color 0.25s;}
+.nav-links li a:hover,.nav-links li a:active{color:#FF6565;}
+.logo{width:120px;}
+.hero{padding:60px 0;text-align:left;}
+.hero h1{font-size:2.8rem;margin-bottom:12px;}
+.hero h2{font-size:1.6rem;margin-bottom:24px;color:#8b8f98;}
+.hero-text{font-size:1rem;line-height:1.6;margin-top:16px;color:#555;}
+.btn{background:#FF6565;color:#fff;padding:12px 24px;border:none;border-radius:8px;cursor:pointer;font-weight:600;transition:opacity 0.25s;}
+.btn:hover,.btn:active{opacity:0.9;}
+
+/* WHAT WE DO */
+.what-we-do{padding:60px 0;background:#f7f7f9;text-align:center;}
+.features{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.feature{background:#fff;padding:24px;border-radius:12px;width:280px;box-shadow:0 6px 18px rgba(0,0,0,0.06);transition: transform 0.25s, box-shadow 0.25s;}
+.feature:hover{transform:translateY(-6px);box-shadow:0 12px 24px rgba(0,0,0,0.1);}
+@font-face{font-family:'holberton';src:url('assets/fonts/holberton_school-icon.woff') format('woff');font-display:swap;}
+.icon{font-family:'holberton';font-size:36px;color:#FF6565;margin-bottom:12px;display:block;}
+.icon-sound:before{content:"\e900";}
+.icon-battery:before{content:"\e901";}
+.icon-comfort:before{content:"\e902";}
+
+/* OUR RESULTS */
+.our-results{padding:60px 0;text-align:center;}
+.metrics{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.metric{background:#f7f7f9;padding:24px;border-radius:12px;width:220px;box-shadow:0 6px 18px rgba(0,0,0,0.06);transition: transform 0.25s, box-shadow 0.25s;}
+.metric:hover{transform:translateY(-6px);box-shadow:0 12px 24px rgba(0,0,0,0.1);}
+.metric-value{font-size:2rem;font-weight:700;margin-top:12px;margin-bottom:6px;}
+.metric-label{font-size:1rem;color:#8b8f98;}
+
+/* PENTAGON SHAPE */
+.pentagon {
+  width: 80px;
+  background-color: #FF6565;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  height: 80px;
+  margin: 0 auto 12px auto;
+}
+
+/* CONTACT US + FOOTER */
+/* Same as 5-styles.css */
+.contact-us{padding:60px 0;background:#f7f7f9;text-align:center;}
+.contact-form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:16px;}
+.form-row{display:flex;gap:12px;}
+.form-row input,textarea{flex:1;padding:12px;border-radius:8px;border:1px solid #e6e6e6;font-size:1rem;}
+textarea{resize:vertical;}
+.form-actions{text-align:center;}
+.form-actions .btn{padding:12px 24px;border-radius:8px;background:#FF6565;color:#fff;border:none;font-weight:600;cursor:pointer;transition:opacity 0.25s;}
+.footer{background:#1f2937;color:#fff;padding:40px 0;text-align:center;}
+.footer-links{list-style:none;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:16px;}
+.footer-links li a{text-decoration:none;color:#fff;font-weight:600;transition:color 0.25s;}
+.footer-links li a:hover,.footer-links li a:active{color:#FF6565;}
+.footer-text{font-size:0.9rem;color:#c0c0c0;}
+.footer-logo img{width:120px;margin-bottom:20px;}
+
+/* MOBILE */
+@media(max-width:480px){
+  .hero{text-align:center;padding:30px 0;}
+  .hero h1{font-size:1.8rem;}
+  .hero h2{font-size:1.2rem;}
+  .navbar{flex-direction:column;align-items:center;}
+  .nav-links{flex-direction:column;gap:10px;}
+  .features,.metrics{flex-direction:column;align-items:center;}
+  .form-row{flex-direction:column;}
+  .footer-links{flex-direction:column;gap:12px;}
+}

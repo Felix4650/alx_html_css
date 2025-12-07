@@ -1,0 +1,68 @@
+/* ================================
+   OUR RESULTS SECTION
+================================ */
+@font-face {
+  font-family: 'holberton';
+  src: url('assets/fonts/holberton_school-icon.woff') format('woff');
+  font-display: swap;
+}
+
+.our-results {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.our-results h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.our-results .section-subtitle {
+  color: #8b8f98;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* METRIC CARDS */
+.metrics {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.metric {
+  background-color: #f7f7f9;
+  padding: 24px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.metric:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.metric-label {
+  font-size: 1rem;
+  color: #8b8f98;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .metrics {
+    flex-direction: column;
+    align-items: center;
+  }
+}

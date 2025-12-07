@@ -1,0 +1,83 @@
+/* ================================
+   CONTACT US SECTION
+================================ */
+@font-face {
+  font-family: 'holberton';
+  src: url('assets/fonts/holberton_school-icon.woff') format('woff');
+  font-display: swap;
+}
+
+.contact-us {
+  padding: 60px 0;
+  background-color: #f7f7f9;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.contact-us .section-subtitle {
+  color: #8b8f98;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* FORM STYLES */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  font-size: 1rem;
+}
+
+textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.form-actions .btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #FF6565;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+
+.form-actions .btn:hover,
+.form-actions .btn:active {
+  opacity: 0.9;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+  }
+}

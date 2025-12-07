@@ -1,0 +1,78 @@
+/* ================================
+   WHAT WE DO SECTION
+================================ */
+.what-we-do {
+  padding: 60px 0;
+  background-color: #f7f7f9;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.section-subtitle {
+  color: #8b8f98;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* FEATURES CARDS */
+.features {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.feature h3 {
+  margin-top: 16px;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+/* ICON FONT */
+@font-face {
+  font-family: 'holberton';
+  src: url('assets/fonts/holberton_school-icon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.icon {
+  font-family: 'holberton';
+  font-size: 36px;
+  display: block;
+  color: #FF6565;
+  margin-bottom: 12px;
+}
+
+/* icon classes (from demo) */
+.icon-sound:before { content: "\e900"; }
+.icon-battery:before { content: "\e901"; }
+.icon-comfort:before { content: "\e902"; }
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
